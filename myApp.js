@@ -10,6 +10,7 @@ app.get("/", (req, res) => {
 });
 
 // 3. Send the /views/index.html file as a response to GET requests to the / path. If you view your live app, you should see a big HTML heading (and a form that we will use later…), with no style applied.
+const absolutePath = __dirname;
 app.get("/", (req, res) => {
   res.sendFile(absolutePath + "/views/index.html");
 });
